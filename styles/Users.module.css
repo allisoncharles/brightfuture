@@ -1,0 +1,112 @@
+.admin__users {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.admin__users__left {
+  /* flex: 1; */
+  height: 100%;
+  border-right: 0.002rem solid #f0ecec;
+}
+
+.admin__users__right {
+  height: 100%;
+  /* width: 20px; */
+}
+
+.admin__menu__icon {
+  fill: var(--clr-accent-400);
+}
+
+.admin__nav__toggle {
+  position: absolute;
+  z-index: 99;
+  top: 0.8rem;
+  left: 1rem;
+}
+
+.admin__nav__toggle__btn {
+  display: block;
+  top: var(--size-450);
+  right: var(--size-400);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+.visually__hidden {
+  position: absolute;
+  width: var(--size-10);
+  height: var(--size-10);
+  padding: 0;
+  margin: var(--size-1);
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* desktop screens */
+@media (min-width: 54.4375em) {
+  .admin__users__left {
+    width: 9rem;
+  }
+
+  .admin__nav__toggle {
+    display: none;
+  }
+
+  .admin__users__right {
+    width: calc(100vw - 11rem);
+  }
+}
+
+/* tablet screens */
+@media only screen and (max-width: 54.43125em) {
+  .admin__users__left {
+    display: none;
+  }
+
+  .admin__users__left[data-overlay]::before {
+    content: "";
+    position: fixed;
+    width: calc(100vw - 8.8rem);
+    z-index: -1;
+    top: 0;
+    left: 8.9rem;
+    right: 0rem;
+    bottom: 0rem;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.671), rgb(0 0 0 /0.8));
+  }
+
+  .admin__users__left[data-visible] {
+    display: block;
+    z-index: 9;
+    background: white;
+  }
+
+  .admin__users__left[data-visible]
+    + .admin__users__right
+    > .admin__nav__toggle {
+    left: 5.5rem;
+  }
+
+  .admin__users__right {
+    flex: 4;
+  }
+}
+
+/* mobile screens */
+@media only screen and (max-width: 31.25em) {
+  .admin__users__left {
+    display: none;
+  }
+
+  .admin__users__right {
+    flex: 1;
+  }
+}

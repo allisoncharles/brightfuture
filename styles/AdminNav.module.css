@@ -1,0 +1,54 @@
+.admin__nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: max-content;
+}
+
+.admin__nav__settings {
+  width: 44px;
+  height: 44px;
+}
+
+.admin__nav__title {
+  font-size: 15px;
+  color: rgb(197, 194, 194);
+  padding-block: 1rem 0rem;
+  padding-left: 0.5rem;
+  text-transform: capitalize;
+}
+
+.admin__link {
+  list-style: none;
+  text-transform: capitalize;
+  font-size: var(--fs-200);
+  color: rgb(19, 18, 18);
+}
+
+.admin__link > li {
+  padding-inline: 1rem;
+  color: rgb(56, 55, 55);
+  cursor: pointer;
+  padding-block: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.admin__link > li:hover {
+  background: rgba(121, 102, 247, 0.253);
+}
+
+.admin__nav__items {
+  display: flex;
+  align-items: center;
+}
+
+.admin__nav__icon {
+  fill: rgb(63, 59, 59);
+  height: 1.1rem;
+  width: 1.1rem;
+}
+
+.admin__icon__wrapper {
+  margin-right: 0.3rem;
+}

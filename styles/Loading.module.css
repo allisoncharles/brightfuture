@@ -1,0 +1,78 @@
+.spinner__wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.925);
+  z-index: 9999;
+}
+
+.spinner__container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 var(--clr-accent-300);
+  background: transparent;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+
+.spinner__text {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--clr-accent-300);
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.4em;
+  font-weight: var(--fw-bold);
+  background: transparent;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

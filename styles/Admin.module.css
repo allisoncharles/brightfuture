@@ -1,0 +1,42 @@
+.admin {
+  display: flex;
+  position: relative;
+  min-height: 70vh;
+  max-width: 100%;
+  overflow: hidden;
+  background: rgb(214, 205, 205);
+}
+
+.auth__container {
+  margin-block: 3rem 0rem;
+  height: max-content;
+  margin-inline: auto;
+  padding: 2rem 0rem;
+  background: var(--clr-accent-400);
+  position: relative;
+  border-radius: 3%;
+}
+
+@media screen and (max-width: 54.375em) {
+  .auth__container {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .auth__container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 22.5em) {
+  .auth__container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 54.376em) {
+  .auth__container {
+    width: 20rem;
+  }
+}

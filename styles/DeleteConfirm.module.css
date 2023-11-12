@@ -1,0 +1,74 @@
+.delete__confirm__wrapper {
+  position: absolute;
+  width: 100vw !important;
+  height: 100%;
+  left: -0rem;
+  background-image: linear-gradient(
+    rgba(12, 12, 12, 0.911),
+    rgba(0, 0, 0, 0.945)
+  );
+  z-index: 1;
+}
+
+.delete__confirm {
+  width: max-content;
+  padding: 0.8rem 1.5rem;
+  background: var(--clr-accent-400);
+  margin-inline: auto;
+  margin-top: 6rem;
+  border-radius: 0.2rem;
+  color: white;
+}
+
+.delete__confirm__text {
+  font-size: medium;
+  width: 20rem;
+  margin-inline: auto;
+}
+
+@media (max-width: 31.25em) {
+  .delete__confirm__text {
+    width: 12rem;
+  }
+}
+
+.delete__confirm__warning {
+  color: red;
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+}
+
+.delete__confirm__button__container {
+  display: flex;
+  gap: 1.1rem;
+  width: max-content;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.delete__confirm__button {
+  padding: 0.35rem 0.7rem;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  background: var(--clr-accent-400);
+  color: white;
+  cursor: pointer;
+}
+
+.delete__confirm__button .delete__confirm__button__true {
+  color: red;
+}
+
+.delete__confirm__button__true:hover {
+  background: red;
+  border: 1px solid white;
+  font-weight: var(--fw-bold);
+  color: white;
+  scale: 1.1;
+}
+
+.delete__confirm__button__false:hover {
+  background: var(--clr-accent-100);
+  color: black;
+  font-weight: var(--fw-bold);
+}
