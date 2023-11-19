@@ -14,7 +14,9 @@
 }
 
 .check__result__config__icon {
-  width: max-content;
+  width: 30px;
+  height: 30px;
+  aspect-ratio: 1;
   fill: var(--clr-neutral-100);
 }
 
