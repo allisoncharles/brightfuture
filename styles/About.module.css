@@ -2,7 +2,6 @@
   background: hsl(0, 0%, 85%);
   padding-top: var(--size-580);
   padding-bottom: 2rem;
-  font-weight: var(--fw-bold);
   overflow: hidden;
 }
 
@@ -81,6 +80,7 @@
   text-transform: uppercase;
   color: var(--clr-neutral-600);
   font-size: var(--fs-470);
+  font-weight: var(--fw-semi-bold);
 }
 
 @media screen and (max-width: 500px) {
@@ -202,7 +202,6 @@
   padding-left: var(--size-400);
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  font-weight: var(--fw-400);
   text-align: center;
   text-transform: uppercase;
 }
