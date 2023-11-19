@@ -158,6 +158,7 @@
   gap: var(--size-600); /* 2rem */
   width: fit-content;
   margin-inline: auto;
+  outline: 1px dashed lime;
 }
 
 .nav__list__item {
@@ -166,6 +167,7 @@
   font-weight: bold;
   gap: var(--size-400);
   cursor: pointer;
+  outline: 1px dashed red;
 }
 
 @media only screen and (max-width: 54.375em) {
@@ -195,6 +197,7 @@
   fill: var(--clr-neutral-300);
   width: 30px;
   height: 30px;
+  outline: 1px dashed yellow;
 }
 
 .menu__icon {
