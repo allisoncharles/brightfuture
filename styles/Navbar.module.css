@@ -175,10 +175,10 @@
     border-bottom: var(--size-50) solid transparent;
   }
 }
-.nav__list__item .navbar__icon {
+/* .nav__list__item .navbar__icon {
   aspect-ratio: 1;
   width: fit-content;
-}
+} */
 
 .nav__list__item:hover .nav__title {
   border-bottom: var(--size-50) solid var(--clr-accent-200);
@@ -197,6 +197,7 @@
   fill: var(--clr-neutral-300);
   width: 30px;
   height: 30px;
+  aspect-ratio: 1;
   outline: 1px dashed yellow;
 }
 
