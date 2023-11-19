@@ -1,5 +1,4 @@
 import styles from "../styles/Navbar.module.css";
-import Image from "next/image";
 import CheckResultConfig from "./CheckResultConfig";
 import { useRef, useState } from "react";
 import Result from "./Result";
@@ -132,20 +131,20 @@ const Navbar = ({ homeRef, aboutRef, contactRef }) => {
             id="primary__navigation"
           >
             <ul aria-label="primary" className={styles.nav__list}>
-              <li onClick={() => handleScroll(homeRef?.current)}>
+              <li className={styles.nav__list__item} onClick={() => handleScroll(homeRef?.current)}>
                 <svg className={styles.navbar__icon} width="146" height="24">
                   <use xlinkHref="/svg/home-icon.svg#icon-home" />
                 </svg>
                 <span className={styles.nav__title}>home</span>
               </li>
-              <li onClick={() => handleScroll(aboutRef?.current)}>
+              <li className={styles.nav__list__item} onClick={() => handleScroll(aboutRef?.current)}>
                 <svg className={styles.navbar__icon} width="146" height="24">
                   <use xlinkHref="/svg/info-icon.svg#icon-info" />
                 </svg>
                 <span className={styles.nav__title}>about us</span>
               </li>
 
-              <li ref={resultRef} onClick={showResultConfig}>
+              <li className={styles.nav__list__item} ref={resultRef} onClick={showResultConfig}>
                 <svg className={styles.navbar__icon} width="146" height="24">
                   <use
                     xlinkHref="/svg/check-result-icon.svg#check-result-icon"
@@ -155,7 +154,7 @@ const Navbar = ({ homeRef, aboutRef, contactRef }) => {
 
                 <span className={styles.nav__title}>check result</span>
               </li>
-              <li onClick={() => handleScroll(contactRef?.current)}>
+              <li className={styles.nav__list__item} onClick={() => handleScroll(contactRef?.current)}>
                 <svg className={styles.navbar__icon} width="146" height="24">
                   <use xlinkHref="/svg/contact-icon.svg#icon-contact" />
                 </svg>
