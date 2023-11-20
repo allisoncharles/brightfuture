@@ -19,6 +19,11 @@ const CheckResultConfig = () => {
   const passcodeRef = useRef(null);
   const [passcode, setPasscode] = useState("");
   const { sessions } = useContext(SettingContext);
+  const testReg = process.env.NEXT_PUBLIC_TESTREG
+  const testPasscode = process.env.NEXT_PUBLIC_TESTPASSCODE
+  const testTerm = process.env.NEXT_PUBLIC_TESTTERM
+  const testSession = process.env.NEXT_PUBLIC_TESTSESSION
+  
 
   const reversedSessions = sessions?.map((sess) => sess.session).reverse();
   const currentSession = reversedSessions[0];
@@ -71,15 +76,15 @@ const CheckResultConfig = () => {
 
   const handleTestData = (e) => {
     e.preventDefault();
-    setSession("2023/2024");
-    setTerm("first");
-    setRegno("std/reg/2021/0004");
-    setPasscode("0299902c");
+    setSession(testSession);
+    setTerm(testTerm);
+    setRegno(testReg);
+    setPasscode(testPasscode);
 
-    regnoRef.current.placeholder = "std/reg/2021/0004";
-    sessionRef.current.placeholder = "2023/2024";
-    termRef.current.placeholder = "first";
-    passcodeRef.current.placeholder = "0299902c";
+    regnoRef.current.placeholder = testReg;
+    sessionRef.current.placeholder = testSession;
+    termRef.current.placeholder = testTerm;
+    passcodeRef.current.placeholder = testPasscode;
 
     regnoRef.current.setAttribute("testdata", true);
     sessionRef.current.setAttribute("testdata", true);
