@@ -13,8 +13,8 @@ const Login = () => {
   const regnoRef = useRef(null);
   const passcodeRef = useRef(null);
   const formRef = useRef(null);
-  const testUserReg = process.env.NEXT_PUBLIC_TESTREG
-    const testUserPasscode = process.env.NEXT_PUBLIC_TESTPASSCODE
+  const testUserReg = process.env.NEXT_PUBLIC_TEST_LOGIN_REG
+    const testUserPasscode = process.env.NEXT_PUBLIC_TEST_LOGIN_PASSCODE
 
   const [loginUser, { data, loading, error }] = useMutation(LOGIN, {
     onCompleted({ loginUser }) {
