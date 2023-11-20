@@ -67,11 +67,10 @@
 }
 
 .header__text {
-  padding: 1rem 0;
   z-index: 1;
   text-transform: uppercase;
   color: white;
-  font-size: var(--fs-580);
+  font-size: var(--fs-550);
   font-weight: var(--fw-bold);
 }
 
@@ -86,16 +85,6 @@
   .header__info {
     font-size: var(--fs-400);
   }
-}
-
-.header__info::before {
-  content: "";
-  left: -1rem;
-  position: absolute;
-  height: 1.7rem;
-  border-radius: 10%;
-  width: 40%;
-  background: rgba(19, 201, 98, 0.123);
 }
 
 .about__text {
@@ -113,120 +102,24 @@
   font-weight: var(--fw-bold);
   text-transform: uppercase;
   color: hsla(0, 0%, 3%, 0.815);
-}
-
-@media screen and (max-width: 870px) {
-  .about__text__header {
-    font-size: var(--fs-570);
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .about__text__header {
-    font-size: var(--fs-570);
-  }
+  font-size: var(--fs-550);
 }
 
 @media screen and (min-width: 871px) {
   .about__text__header {
-    font-size: var(--fs-670);
+    font-size: var(--fs-560);
   }
-}
-
-.vission::before {
-  content: "";
-  position: absolute;
-  background: #fa070783;
-  height: 2px;
-}
-
-.mission::before {
-  content: "";
-  position: absolute;
-  background: #fa070783;
-  height: 2px;
-}
-
-@media screen and (max-width: 870px) {
-  .vission::before {
-    top: 4px;
-    left: 95px;
-    width: 3rem;
-  }
-
-  .mission::before {
-    top: 4px;
-    left: 115px;
-    width: 3rem;
-  }
-}
-
-@media screen and (min-width: 871px) {
-  .vission::before {
-    top: 8.6px;
-    left: 136px;
-    width: 4.2rem;
-  }
-
-  .mission::before {
-    top: 8.6px;
-    left: 164px;
-    width: 4.2rem;
-  }
-}
-
-.design__vission {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 38%;
-  border-radius: 20px;
-  height: 1.9rem;
-  background-color: rgba(255, 0, 255, 0.089);
-}
-
-.design__mission {
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 60%;
-  border-radius: 20px 0px 0px 20px;
-  height: 1.8rem;
-  background-color: rgba(19, 201, 98, 0.164);
 }
 
 .about__text__details {
   font-size: var(--fs-470);
-  padding-left: var(--size-400);
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-  text-align: center;
 }
 
 .about__text__details > b {
   color: red;
-  text-transform: uppercase;
-}
-
-.about__text__details::before {
-  content: "";
-  position: absolute;
-  left: -1rem;
-  width: 9rem;
-  border-radius: 20px;
-  height: 1.9rem;
-  background-color: rgba(137, 97, 175, 0.199);
-}
-
-.about__text__details::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  width: 7rem;
-  border-radius: 20px 0px 0px 20px;
-  height: 1.5rem;
-  background-color: rgba(128, 255, 0, 0.178);
+  text-transform: capitalize;
 }
 
 .header__text__container {
