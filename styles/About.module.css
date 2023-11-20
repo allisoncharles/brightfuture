@@ -77,7 +77,6 @@
 
 .header__info {
   padding: 1rem 1rem;
-  text-transform: uppercase;
   color: var(--clr-neutral-600);
   font-size: var(--fs-470);
   font-weight: var(--fw-semi-bold);
@@ -203,11 +202,11 @@
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .about__text__details > b {
   color: red;
+  text-transform: uppercase;
 }
 
 .about__text__details::before {
