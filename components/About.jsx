@@ -38,10 +38,9 @@ const About = ({ faceRes, aboutRef }) => {
           >
             our vision
           </h2>
-          <div className={styles.design__vission}></div>
           <p className={styles.about__text__details}>
             To prepare young people capable of providing <b>honest</b> &{" "}
-            <b>quality</b> <b>leadership</b> to the Nigerian society
+            <b>quality</b> <b>leadership</b> to the society
           </p>
         </div>
         <div className={styles.about__text}>
@@ -50,7 +49,6 @@ const About = ({ faceRes, aboutRef }) => {
           >
             our mission
           </h2>
-          <div className={styles.design__mission}></div>
           <p className={styles.about__text__details}>
             To provide in a conducive and <b>godly</b> environment, balanced
             education opportunities directed at the <b>development</b> of our
