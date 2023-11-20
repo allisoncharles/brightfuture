@@ -21,7 +21,6 @@ NEXT_PUBLIC_TEST_LOGIN_PASSCODE
 NEXT_PUBLIC_TEST_LOGIN_REG
 
 
-
 NEXT_PUBLIC_TESTREG
 
 NEXT_PUBLIC_TESTPASSCODE
@@ -39,6 +38,5 @@ npm run dev
 yarn dev
 ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Test Upload Users and Result Functionality from the admin panel
+Use the test files in the root of the directory. for year 7 and year 8 class.
