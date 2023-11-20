@@ -13,6 +13,8 @@ const Login = () => {
   const regnoRef = useRef(null);
   const passcodeRef = useRef(null);
   const formRef = useRef(null);
+  const testUserReg = process.env.NEXT_PUBLIC_TESTREG
+    const testUserPasscode = process.env.NEXT_PUBLIC_TESTPASSCODE
 
   const [loginUser, { data, loading, error }] = useMutation(LOGIN, {
     onCompleted({ loginUser }) {
@@ -29,10 +31,10 @@ const Login = () => {
 
   function handleTestData(e) {
     e.preventDefault();
-    setRegno("std/reg/0000/0000");
-    setPasscode("2042060i");
-    regnoRef.current.placeholder = "std/reg/0000/0000";
-    passcodeRef.current.placeholder = "2042060i";
+    setRegno(testUserReg);
+    setPasscode(testUserPasscode);
+    regnoRef.current.placeholder = testUserReg;
+    passcodeRef.current.placeholder = testUserPasscode;
 
     regnoRef.current.setAttribute("testdata", true);
     passcodeRef.current.setAttribute("testdata", true);
