@@ -9,16 +9,25 @@ Administrators can effortlessly upload CSV files containing user information and
 
 First create a .env.local file at the root of the app, and include the following.
 SECRET_KEY - A jwt token.
+
 MONGODB_URI - MongoDB connection URI
+
 BASE_URL - The baseURL of the running application. In development : http://localhost:3000
 
 In case you want to insert details for the app test demo; add this to the env file. You'll have t create a user and upload a result to be able to fill in the details.
+
 NEXT_PUBLIC_TEST_LOGIN_PASSCODE
+
 NEXT_PUBLIC_TEST_LOGIN_REG
 
+
+
 NEXT_PUBLIC_TESTREG
+
 NEXT_PUBLIC_TESTPASSCODE
+
 NEXT_PUBLIC_TESTTERM
+
 NEXT_PUBLIC_TESTSESSION
 
 
