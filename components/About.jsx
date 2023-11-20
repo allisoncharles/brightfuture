@@ -25,7 +25,7 @@ const About = ({ faceRes, aboutRef }) => {
             </h2>
           </div>
           <h2 className={styles.header__info}>
-            we are in tune with the future of learning, and continue to lead the
+            We are in tune with the future of learning, and continue to lead the
             pack in world-class education
           </h2>
         </div>
