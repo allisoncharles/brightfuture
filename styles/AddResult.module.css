@@ -1,0 +1,153 @@
+.add__result {
+  position: relative;
+  width: 100%;
+  padding-block: 2rem;
+}
+
+.add__result__wrapper {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
+.add__result__input__wrapper {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+@media (max-width: 31.25em) {
+  .add__result__input__wrapper {
+    width: max-content;
+  }
+}
+
+.add__result__input {
+  width: 15rem;
+  padding: 0.3rem 0;
+  border: 1px solid var(--clr-accent-100);
+  border-radius: 0.2rem;
+  padding-inline: 0.5rem;
+}
+
+.add__result__input:focus {
+  outline: none;
+}
+
+@media (max-width: 31.25em) {
+  .add__result__input {
+    width: 12rem;
+    margin-inline: auto;
+  }
+}
+
+.add__result__input__file {
+  display: none;
+}
+
+.add__result__upload__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--clr-accent-300);
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.add__result__upload__icon:hover {
+  fill: var(--clr-accent-200);
+}
+
+.add__result__button {
+  cursor: pointer;
+  width: max-content;
+  margin-inline: auto;
+}
+
+.add__result__submit__wrapper {
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: max-content;
+  margin-inline: auto;
+}
+
+.add__result__decision__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.add__result__radio__text {
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-800);
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.add__result__radio {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+}
+
+.add__result__upload__button {
+  padding: 0.28rem 0.4rem;
+  background: var(--clr-accent-300);
+  border: none;
+  border-radius: 0.16rem;
+  color: white;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.add__result__upload__button:hover {
+  background: var(--clr-accent-200);
+}
+
+.add__result__message__load {
+  margin-top: 1rem;
+  background: rgb(196, 196, 13);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+.add__result__message__error {
+  animation: hideMessage 0s ease-in 7s;
+  animation-fill-mode: forwards;
+  margin-top: 1rem;
+  background: rgba(233, 54, 54, 0.637);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+.add__result__message {
+  animation: hideMessage 0s ease-in 5s;
+  animation-fill-mode: forwards;
+  margin-top: 1rem;
+  background: rgba(7, 172, 7, 0.664);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+@keyframes hideMessage {
+  to {
+    visibility: hidden;
+  }
+}

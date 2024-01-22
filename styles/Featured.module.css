@@ -1,0 +1,310 @@
+.featured {
+  width: 100%;
+  min-height: 20vh;
+  position: relative;
+  font-family: var(--ff-primary);
+  overflow-x: hidden;
+}
+
+@media print {
+  .featured {
+    display: none;
+  }
+}
+
+.featured__wrapper {
+  position: relative;
+  display: flex;
+  width: var(--full-width);
+  height: auto;
+}
+
+.featured__wrapper > input {
+  display: none;
+}
+
+.featured__container {
+  min-width: 100%;
+  transition: 1s;
+  height: auto;
+}
+
+.image__container {
+  position: relative;
+  width: var(--full-width);
+  padding-top: 44.6%;
+  background: gray;
+}
+
+.featured__image {
+  position: absolute;
+  width: var(--full-width);
+  height: var(--full-height);
+  top: 0;
+  left: 0;
+  object-fit: cver;
+}
+
+@media only screen and (min-width: 54.4375em) {
+  .text__container {
+    position: absolute;
+    padding-top: 3.2%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    padding-left: 2%;
+    width: 100%;
+    bottom: 0px;
+    z-index: 1;
+    color: white;
+    background-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0));
+  }
+
+  .text__container h2 {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    line-height: 50px;
+  }
+
+  .text__container span {
+    font-size: 1.5rem;
+    letter-spacing: 0.6px;
+    /* line-height: 6px; */
+  }
+}
+
+.image__container::after {
+  content: "";
+  background: rgba(37, 36, 36, 0.1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 54.375em) {
+  .text__container {
+    padding: var(--size-400);
+    color: var(--clr-neutral-600);
+  }
+
+  .text__container h2 {
+    font-size: var(--fs-580);
+    font-weight: var(--fw-bold);
+    word-wrap: break-word;
+    line-height: var(--size-490);
+  }
+
+  .text__container span {
+    font-size: var(--fs-520);
+    letter-spacing: var(--size-05);
+    /* font-weight: var(--fw-extra-light); */
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .text__container {
+    padding: var(--size-400);
+    color: var(--clr-neutral-600);
+  }
+
+  .text__container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    word-wrap: break-word;
+    line-height: var(--size-490);
+  }
+
+  .text__container span {
+    font-size: var(--fs-400);
+    letter-spacing: var(--size-05);
+    font-weight: 500;
+  }
+}
+
+.carousel__pager {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  display: flex;
+  gap: var(--size-250);
+  width: max-width;
+  z-index: 1;
+}
+
+.carousel__pager label {
+  width: var(--size-360);
+  height: var(--size-360);
+  border: none;
+  box-shadow: hsla(0, 0%, 0%, 0.5) 0px 0px 7px;
+  background: transparent;
+  border-width: var(--size-50);
+  border-style: solid;
+  border-color: var(--clr-neutral-100);
+  border-radius: var(--size-610);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.carousel__pager label:hover {
+  background: var(--clr-neutral-100);
+}
+
+.carousel__pager label[data-selected="active"] {
+  background: var(--clr-neutral-100);
+}
+
+@media only screen and (min-width: 54.4375em) {
+  .carousel__pager {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    width: max-content;
+    transform: translateX(-50%);
+    gap: var(--size-300);
+    z-index: 1;
+  }
+
+  .carousel__pager label {
+    width: var(--size-450);
+    height: var(--size-450);
+    border: none;
+    box-shadow: hsla(0, 0%, 0%, 0.5) 0px 0px 7px;
+    background: transparent;
+    border-width: var(--size-50);
+    border-style: solid;
+    border-color: var(--clr-neutral-100);
+    /* border-image: initial; */
+    border-radius: var(--size-610);
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .carousel__pager label:hover {
+    background: var(--clr-neutral-100);
+  }
+
+  .carousel__pager label[data-selected="active"] {
+    background: var(--clr-neutral-100);
+  }
+}
+
+/* this ~ works only if id="radio#" and class="first" are siblings or on the same hierrachy */
+
+.featured__wrapper > input[id="radio0"]:checked ~ .first {
+  margin-left: 0;
+}
+
+.featured__wrapper > input[id="radio1"]:checked ~ .first {
+  margin-left: -100%;
+}
+
+.featured__wrapper > input[id="radio2"]:checked ~ .first {
+  margin-left: -200%;
+}
+
+.featured__wrapper > input[id="radio3"]:checked ~ .first {
+  margin-left: -300%;
+}
+
+.featured__wrapper > input[id="radio4"]:checked ~ .first {
+  margin-left: -400%;
+}
+
+.featured__wrapper > input[id="radio0"]:checked ~ .carousel__pager .btn0 {
+  background: var(--clr-neutral-100);
+}
+
+.featured__wrapper > input[id="radio1"]:checked ~ .carousel__pager .btn1 {
+  background: var(--clr-neutral-100);
+}
+.featured__wrapper > input[id="radio2"]:checked ~ .carousel__pager .btn2 {
+  background: var(--clr-neutral-100);
+}
+.featured__wrapper > input[id="radio3"]:checked ~ .carousel__pager .btn3 {
+  background: var(--clr-neutral-100);
+}
+.featured__wrapper > input[id="radio4"]:checked ~ .carousel__pager .btn4 {
+  background: var(--clr-neutral-100);
+}
+
+/* above mobile screens */
+@media (min-width: 31.26em) {
+  .image__container {
+    padding-top: 34.375%;
+  }
+}
+
+.text__wrapper {
+  display: flex;
+}
+.featured__text {
+  min-width: var(--full-width);
+  padding: var(--size-250) 3%;
+  color: var(--clr-neutral-600);
+}
+
+.featured__text h1 {
+  line-height: 1.5rem;
+  color: var(--clr-neutral-600);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+}
+
+/* Larger than pc screens */
+/* @media only screen and (min-width: 64em) {
+  .featured__text {
+  }
+
+  .featured__text h1 {
+  }
+} */
+
+/* 
+/* pc screens  1024px
+@media only screen and (max-width: 64em) {
+  .featured__text {
+    font-size: 2.3rem;
+    position: absolute;
+    bottom: 10px;
+    color: var(--clr-neutral-100);
+  }
+
+  .featured__text h1 {
+    text-transform: uppercase;
+    color: var(--clr-neutral-100);
+    line-height: 1.2;
+    font-size: var(--fs-650);
+  }
+} */
+
+/* tablet screens 870px */
+@media only screen and (max-width: 54.375em) {
+  .featured__text {
+    position: static;
+    color: var(--clr-neutral-600);
+    font-size: var(--fs-400);
+  }
+
+  .featured__text h1 {
+    color: var(--clr-neutral-600);
+    font-size: 2.3rem;
+  }
+}
+
+/* mobile screens 500px */
+@media only screen and (max-width: 31.25em) {
+  .featured__text {
+    color: var(--clr-neutral-600);
+    position: static;
+    font-size: var(--fs-200);
+  }
+
+  .featured__text h1 {
+    color: var(--clr-neutral-600);
+    font-size: var(--fs-520);
+  }
+}

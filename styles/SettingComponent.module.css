@@ -1,0 +1,123 @@
+.settings__component {
+  width: 90%;
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+}
+
+.settings__component__wrapper {
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 0.5rem 1.5rem;
+  padding: 1.5rem 1.5rem 1.2rem 1.2rem;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.settings__component__list__wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings__create__button__container {
+  display: flex;
+  align-self: flex-end;
+  padding-top: 1rem;
+}
+
+.settings__component__list__wrapper {
+  padding-top: 1rem;
+}
+
+.settings__create__button {
+  width: max-content;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  background: var(--clr-accent-200);
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  text-transform: capitalize;
+}
+
+.userlist__create__button:hover {
+  background: hsl(212, 48%, 63%);
+}
+
+@media (max-width: 31.25em) {
+  .settings__component {
+    width: 96%;
+  }
+}
+
+@media (min-width: 54.4375em) {
+  .settings__component {
+    width: max-content;
+  }
+}
+
+.settings__component__list {
+  list-style: none;
+}
+
+.settings__component__list__item {
+  width: 95%;
+  padding: 0.599rem 0.2rem;
+  border-radius: 0.4rem;
+}
+
+.settings__component__list__item:nth-child(odd) {
+  background: rgba(199, 215, 221, 0.452);
+}
+
+.settings__component__list__item:hover {
+  background: hsla(212, 48%, 63%, 0.877);
+}
+
+.settings__component__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0.7rem;
+}
+
+.settings__component__image__container {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 31.25em) {
+  .settings__component__image__container {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (min-width: 47em) {
+  .settings__component__image__container {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+.settings__component__image {
+  border-radius: 10px;
+}
+
+.settings__component__title {
+  flex: 4;
+}
+
+.settings__component__delete__icon {
+  width: 20px;
+  height: 20px;
+  fill: red;
+  cursor: pointer;
+}
+
+.settings__component__delete__icon:hover {
+  scale: 1.2;
+}

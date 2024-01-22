@@ -1,0 +1,213 @@
+.userlist {
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.userlist__create__button__container {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  top: 1rem;
+  right: 1rem;
+  height: fit-content;
+}
+
+.search__wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.pagination__wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 32.25em) {
+  .pagination__wrapper {
+    width: 100vw;
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 27.5em) {
+  .userlist__create__button__container {
+    height: fit-content;
+    width: 80%;
+    flex-wrap: wrap;
+    align-self: right;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .userlist__create__button__container {
+    height: fit-content;
+    width: 75%;
+    flex-wrap: wrap;
+    align-self: right;
+  }
+}
+
+@media (max-width: 17.11875em) {
+  .userlist__create__button__container {
+    height: fit-content;
+    width: 70%;
+    padding-inline: 2rem;
+    flex-wrap: wrap;
+    align-self: right;
+  }
+}
+
+.userlist__create__button {
+  width: max-content;
+  height: max-content;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  background: var(--clr-accent-200);
+  color: #fff;
+  border: none;
+  border-radius: 0.3125rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 26em) {
+  .userlist__create__button {
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+.userlist__create__button:hover {
+  background: hsl(212, 48%, 63%);
+}
+
+.search__container {
+  display: flex;
+  align-items: center;
+  margin-block: 4rem 2rem;
+  border: var(--size-10) solid var(--clr-accent-100);
+  border-radius: var(--size-100);
+  width: max-content;
+  margin-inline: auto;
+  padding-inline: 1.6rem 0;
+}
+
+@media (max-width: 27.5em) {
+  .search__container {
+    margin-block: 7rem 1rem;
+  }
+}
+
+@media (max-width: 17.11875em) {
+  .search__container {
+    margin-block: 8.8rem 1rem;
+  }
+}
+
+.search__input {
+  border: none;
+  font-size: var(--fs-200);
+}
+
+.search__input::placeholder {
+  font-size: var(--fs-50);
+}
+
+.search__input:focus {
+  outline: none;
+  border: none;
+}
+
+.userlist__header {
+  text-transform: uppercase;
+  font-size: var(--fs-100);
+  padding: 5px;
+  border-bottom: 1px solid var(--clr-accent-100);
+}
+
+.admin__userlist__wrapper {
+  width: 100vw;
+  padding-block: 1rem;
+  padding-right: 1rem;
+  overflow-x: auto;
+}
+
+@media (min-width: 54.4374em) {
+  .admin__userlist__wrapper {
+    width: 100%;
+  }
+}
+
+.admin__userlist {
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-700);
+  border-collapse: collapse;
+  width: max-content;
+  margin: auto;
+  border: 1px solid var(--clr-accent-100);
+}
+
+.admin__userlist__col {
+  padding: 0.15rem 1.3rem;
+  border-bottom: 1px solid var(--clr-neutral-300);
+}
+
+.userlist__row:hover {
+  background: hsl(212, 48%, 63%);
+  color: white;
+}
+
+.admin__userlist__name {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.userList__profileImg {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin__search__icon__wrapper {
+  /* background: var(--clr-accent-100); */
+  background: hsl(212, 48%, 63%);
+  padding-block: 0.5rem;
+  padding-inline: 1.2rem;
+  cursor: pointer;
+}
+
+.admin__search__icon__wrapper:hover {
+  background: hsl(213, 40%, 71%);
+}
+
+.admin__search__icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  cursor: pointer;
+}
+
+.admin__edit__icon {
+  width: 20px;
+  height: 20px;
+  fill: green;
+  cursor: pointer;
+}
+
+.admin__edit__icon:hover {
+  scale: 1.4;
+}
+
+.admin__delete__icon {
+  width: 20px;
+  height: 20px;
+  fill: red;
+  cursor: pointer;
+}
+
+.admin__delete__icon:hover {
+  scale: 1.2;
+}
+
+.admin__userlist__actions {
+  display: flex;
+  gap: 1rem;
+}

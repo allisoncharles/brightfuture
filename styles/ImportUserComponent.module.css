@@ -1,0 +1,98 @@
+.import__user__component {
+  padding-block: 2.5rem 2rem;
+}
+
+.import__user__component__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+  padding: 1.5rem 1.5rem 1.2rem 1.2rem;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+
+.import__user__component__input__container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: max-content;
+}
+
+.import__user__component__input {
+  border: none;
+  padding: 0.2rem 0rem;
+  padding-left: 0.5rem;
+  border: 0.5px solid var(--clr-accent-100);
+}
+
+.import__user__component__upload__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--clr-accent-300);
+  cursor: pointer;
+}
+
+.import__user__component__input__file {
+  display: none;
+}
+
+.import__user__component__btn__container {
+  margin-inline: auto;
+}
+
+.import__user__component__btn {
+  border-radius: 0.1rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--clr-accent-300);
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+}
+
+.import__user__component__btn:hover {
+  background: var(--clr-accent-200);
+}
+
+.import__user__component__message__load {
+  margin-top: 1rem;
+  background: rgb(196, 196, 13);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+.import__user__component__message__error {
+  animation: hideMessage 0s ease-in 7s;
+  animation-fill-mode: forwards;
+  margin-top: 1rem;
+  background: rgba(233, 54, 54, 0.637);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+.import__user__component__message {
+  animation: hideMessage 0s ease-in 5s;
+  animation-fill-mode: forwards;
+  margin-top: 1rem;
+  background: rgba(7, 172, 7, 0.664);
+  padding: 0.4rem 0.6rem;
+  color: white;
+  width: max-content;
+  margin-inline: auto;
+  border-radius: 0.1rem;
+}
+
+@keyframes hideMessage {
+  to {
+    visibility: hidden;
+  }
+}

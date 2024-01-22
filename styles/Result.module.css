@@ -1,0 +1,324 @@
+.result {
+  position: relative;
+  color: var(--clr-neutral-900);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.result__wrapper {
+  /* padding-inline: 3%; */
+  height: max-content;
+}
+
+.result__nav {
+  position: relative;
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+.print__button {
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-bold);
+  border: 1px solid var(--clr-accent-400);
+  color: var(--clr-accent-400);
+  background: white;
+  border-radius: 0.3125rem;
+  border: 1px solid var(--clr-accent-400);
+}
+
+.print__button:hover {
+  color: #ffffff;
+  background: var(--clr-accent-400);
+}
+
+.result__close__icon {
+  cursor: pointer;
+  border: 1px solid red;
+  fill: red;
+  border-radius: 0.2rem;
+  background: white;
+  padding: 0.4rem;
+}
+
+.result__close__icon:hover {
+  border: none;
+  background: rgb(235, 24, 24);
+  border-radius: 0.2rem;
+  fill: white;
+}
+
+.result__school__logo__container {
+  visibility: hidden;
+  position: relative;
+  margin-inline: auto;
+  float: left;
+  height: 7.5rem;
+  width: 6.5rem;
+  margin-bottom: var(--size-400);
+  background: transparent;
+  border-radius: 0.3125rem;
+}
+
+.result__school__logo {
+  object-fit: contain;
+}
+
+.result__school__address {
+  display: none;
+}
+
+.result__user__image__container {
+  position: relative;
+  margin-inline: auto;
+  align-self: center;
+  height: 7rem;
+  width: 6.5rem;
+  margin-bottom: var(--size-400);
+  background: gray;
+  border-radius: 0.3125rem;
+}
+
+.result__user__image {
+  border-radius: 0.3125rem;
+  object-fit: cover;
+}
+
+.result__user__detail {
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+  word-wrap: break-word;
+  border: 0.09375rem solid hsl(212, 89%, 82%);
+  border-radius: 0.3125rem;
+  padding-block: 0.5rem;
+  color: var(--clr-neutral-900);
+  padding-inline: 6%;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
+}
+
+.result__user__item {
+  display: flex;
+  align-items: center;
+}
+
+.result__user__detail__title {
+  word-wrap: normal;
+  color: var(--clr-neutral-500);
+  width: 9rem;
+  margin-right: min(1rem, 0.5%);
+}
+
+.result__details {
+  margin-top: 1rem;
+  padding: 1rem 0.5rem;
+  overflow-x: auto;
+}
+
+.result__details__table {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  border-collapse: collapse;
+}
+
+.result__details__table thead {
+  background: rgb(211, 248, 211);
+}
+
+.result__details__table__body tr {
+  border-block: 3px solid white;
+}
+
+.result__details__table tr:nth-child(even) {
+  background: rgb(211, 248, 211);
+}
+
+.result__details__header {
+  padding-block: 0.5rem;
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-500);
+  padding-inline: 0.75rem;
+  text-align: center;
+}
+
+.result__detail__title {
+  color: var(--clr-neutral-500);
+  font-size: var(--fs-400);
+  padding-inline: 1rem 1rem;
+  text-align: left;
+}
+
+.result__background__below__score {
+  background: rgb(255, 222, 222) !important;
+}
+
+.result__report__info__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid rgb(221, 219, 219);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+}
+
+.result__report__info__title {
+  color: var(--clr-neutral-500);
+  text-transform: capitalize;
+}
+
+.result__report__info__title__head {
+  color: var(--clr-neutral-500);
+  text-transform: capitalize;
+}
+
+.result__report__info__value {
+  margin-left: 0.2rem;
+  color: black;
+}
+
+@media screen and (min-width: 501px) {
+  .result__report__info__item {
+    font-size: var(--fs-400);
+  }
+}
+
+@media print {
+  .result {
+    display: block;
+    min-height: 100% !important;
+    min-height: max-content !important;
+    overflow: visible !important;
+    margin-inline: 2rem;
+  }
+
+  .result__header {
+    display: flex;
+  }
+
+  .result__wrapper {
+    padding-inline: 0;
+  }
+
+  .result__nav {
+    display: none;
+  }
+
+  .result__school__Name {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .result__school__Name > b {
+    font-size: 1.14rem;
+  }
+
+  .result__user__detail {
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 0;
+    border: none;
+    padding-block: 0.1rem;
+  }
+
+  .result__details__header {
+    border: 1px solid black;
+    color: black !important;
+    padding-block: 0.1rem;
+  }
+
+  .result__report__info__item {
+    flex-direction: row;
+    border-bottom: none;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-400);
+    padding: 0rem 0rem;
+  }
+
+  .result__report__info__title {
+    color: black;
+    width: 8.8rem;
+    height: max-content;
+  }
+
+  .result__report__info__title__head {
+    color: black;
+    width: 12.9rem;
+    height: max-content;
+  }
+
+  .result__school__logo__container {
+    visibility: visible;
+  }
+
+  .result__school__address {
+    display: block;
+    font-weight: var(--fw-bold);
+    text-align: center;
+  }
+
+  .result__user__detail__title {
+    width: max-content;
+    color: black !important;
+  }
+
+  .result__user__item {
+    border: 0.5px solid black;
+    border-bottom: 0px;
+    border-right: 0px;
+  }
+
+  .result__user__item h4 {
+    border-bottom: 0.5px solid black;
+    border-right: 0.5px solid black;
+    padding-inline: 0.2rem;
+  }
+
+  .result__details {
+    height: max-content !important;
+    padding: 0;
+    overflow-x: none;
+    overflow-y: visible !important;
+  }
+
+  .result__detail__title {
+    padding-inline: 1rem 0rem;
+    color: black !important;
+  }
+
+  .result__details__table__body tr {
+    border-block: 1px solid black;
+  }
+
+  .result__details__table__body tr td {
+    border: 1px solid black;
+    padding-inline: 0.2rem;
+  }
+
+  .result__report__info__wrapper {
+    display: flex;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    overflow: visible !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 0;
+  }
+}
